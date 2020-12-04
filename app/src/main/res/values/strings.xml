@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="signUp">Sign Up</string>
+    <string name="signInfo">Sign Up Information</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="passwordCheck">Confirm Password</string>
+    <string name="submit">Create Account</string>
+    <string name="signIn">Sign In</string>
+    <string name="signInInfo">Sign In Information</string>
+</resources>
