@@ -12,4 +12,5 @@
     <string name="submit">Create Account</string>
     <string name="signIn">Sign In</string>
     <string name="signInInfo">Sign In Information</string>
+    <string name="error_text">Loading error.</string>
 </resources>
