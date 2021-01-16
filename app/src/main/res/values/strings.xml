@@ -13,4 +13,7 @@
     <string name="signIn">Sign In</string>
     <string name="signInInfo">Sign In Information</string>
     <string name="error_text">Loading error.</string>
+    <string name="all_pokemon">Pokemon List</string>
+    <string name="favorite">Favorite Pokemon</string>
+    <string name="name">Trainer Name</string>
 </resources>

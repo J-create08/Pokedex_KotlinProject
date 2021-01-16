@@ -7,6 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.project.pokedex.R
+import com.project.pokedex.network.models.PokemonInfo
+import io.reactivex.rxjava3.core.Observable
+import io.reactivex.rxjava3.disposables.CompositeDisposable
+import io.reactivex.rxjava3.subjects.PublishSubject
 import kotlinx.android.synthetic.main.fragment_login.*
 
 class LoginFragment : Fragment() {
@@ -23,9 +27,12 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         submitButton.setOnClickListener {
-//            val action = LoginFragmentDirections.action_loginFragment_to_pokemonViewFragment()
-            findNavController().navigate(R.id.action_loginFragment_to_pokemonViewFragment)
+            val action = LoginFragmentDirections.actionLoginFragmentToPokemonViewFragment(trainerName.text.toString())
+            findNavController().navigate(action)
         }
+
     }
+
+
 
 }

@@ -31,5 +31,16 @@
         <action
             android:id="@+id/action_pokemonViewFragment_to_pokemonDetailFragment"
             app:destination="@id/pokemonDetailFragment" />
+        <action
+            android:id="@+id/action_pokemonViewFragment_to_favoriteListFragment2"
+            app:destination="@id/favoriteListFragment2" />
+        <argument
+            android:name="name"
+            app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/favoriteListFragment2"
+        android:name="com.project.pokedex.fragments.FavoriteListFragment"
+        android:label="fragment_favorite_list"
+        tools:layout="@layout/fragment_favorite_list" />
 </navigation>

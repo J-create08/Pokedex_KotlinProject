@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inner_nav"
+    app:startDestination="@id/pokemonViewFragment2">
+
+    <fragment
+        android:id="@+id/pokemonViewFragment2"
+        android:name="com.project.pokedex.fragments.PokemonViewFragment"
+        android:label="fragment_pokemon_view"
+        tools:layout="@layout/fragment_pokemon_view" >
+        <action
+            android:id="@+id/action_pokemonViewFragment2_to_favoriteListFragment"
+            app:destination="@id/favoriteListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteListFragment"
+        android:name="com.project.pokedex.fragments.FavoriteListFragment"
+        android:label="fragment_favorite_list"
+        tools:layout="@layout/fragment_favorite_list" />
+</navigation>
