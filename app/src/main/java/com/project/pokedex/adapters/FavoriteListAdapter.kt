@@ -21,7 +21,14 @@ class FavoriteListAdapter : RecyclerView.Adapter<FavoriteListAdapter.PokemonView
     inner class PokemonViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         fun bind(pokemon: Pokemon) {
             itemView.pokemonName.text = pokemon.name.capitalize()
-            itemView.textViewPokemonID.text = pokemon.id
+            val pokemonID = pokemon.id
+            itemView.textViewPokemonID.text = "ID: ${pokemonID}"
+            val baseUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png"
+            val formattedUrl = baseUrl.replace("132", pokemonID)
+            Glide.with(itemView.context)
+                .load(formattedUrl)
+                .circleCrop().into(itemView.PokemonThumbnail)
+
 //            val markFavorite = R.drawable.ic_baseline_star_fill
 //            Glide.with(itemView.context)
 //                .load(markFavorite)
